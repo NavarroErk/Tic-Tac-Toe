@@ -1,0 +1,66 @@
+:root {
+  --primary-color: #6600ff;
+  --secondary-color: #ffbf00;
+  --light-text-color: #efefef;
+  --dark-text-color: #000000;
+  --border-radius-5: 5px;
+  --border-radius-10: 10px;
+}
+#player-info-container {
+  display: none;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid black;
+}
+#game-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#mark-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mark-btn {
+  background-color: lightGray;
+  color: var(--dark-text-color);
+  border-radius: var(--border-radius-5);
+  margin-left: 10px;
+}
+#start-game-btn {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  border-radius: var(--border-radius-5);
+  padding: 10px;
+}
+#player-turn {
+  text-align: center;
+}
+#gameboard {
+  display: none;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  background-color: black;
+  width: 500px;
+  height: 500px;
+  margin: 10% auto;
+  gap: 2px;
+  padding: 10px;
+}
+#new-game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#new-game-btn {
+  display: none;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  font-size: 1.5rem;
+}

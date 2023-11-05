@@ -4,9 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
   </head>
   <body>
+    <div id="player-info-container">
+      <div class="player">
+        <p class="player-name" id="player1-name">Player:</p>
+        <p id="player1-mark">Mark:</p>
+      </div>
+      <div class="player">
+        <p class="player-name" id="player2-name">Player:</p>
+        <p id="player2-mark">Mark:</p>
+      </div>
+    </div>
+    <p id="player-turn"></p>
+
+    <div id="gameboard"></div>
+
+    <div id="new-game-container">
+      <button id="new-game-btn">New Game</button>
+    </div>
+
+    <div id="game-controls">
+      <div>
+        <input
+          id="player1-input"
+          type="text"
+          placeholder="Enter Player 1 Name"
+        />
+        <input
+          id="player2-input"
+          type="text"
+          placeholder="Enter Player 2 Name"
+        />
+      </div>
+      <div id="mark-btn-container">
+        <p>Pick Mark for Player 1</p>
+        <button class="mark-btn" id="mark-x-btn">X</button>
+        <button class="mark-btn" id="mark-o-btn">O</button>
+      </div>
+
+      <button id="start-game-btn">Start Game</button>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
